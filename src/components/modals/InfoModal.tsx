@@ -12,7 +12,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Guess the word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word. Words can be characters,
-        locations, items, and others that are found in or related to Genshin Impact
+        locations, items, and others that are found in or related to Genshin Impact.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -74,7 +74,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <a href="https://paimordle.vercel.app/" className="underline font-bold">
           Paimordle 
         </a>{' '}
-        and {' '}
+        (currently not updating) and {' '}
         <a href="https://paimordle-vi.vercel.app/" className="underline font-bold">
           Paimordle IV
         </a>{' '}
