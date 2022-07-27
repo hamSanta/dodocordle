@@ -96,7 +96,7 @@ export const getLastGameDate = (today: Date) => {
 
 export const getNextGameDate = (today: Date) => {
   const t = new Date(today)
-  t.setHours(0, 0, 0)
+  t.setHours(1, 0, 0)
   t.setDate(getLastGameDate(today).getDate() + periodInDays)
   return t
 }
