@@ -11,7 +11,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word. 
+        change to show how close your guess was to the word. Words can be characters,
+        locations, items, and others that are found in or related to Genshin Impact
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
@@ -64,7 +65,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here!
+          check out the code here
         </a>{' '}
       </p>
 
