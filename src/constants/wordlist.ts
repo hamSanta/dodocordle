@@ -1,6 +1,6 @@
 //MUST BE RANDOMIZED THIS IS WHERE THE DAILY WORD IS CHOSEN
 export const WORDS = [
-  'burst',
+	'burst', //day 0
 	'spine',
 	'tengu',
 	'jumpy',
@@ -207,8 +207,8 @@ export const WORDS = [
 	'kujou',
 	'sever',
 	'divda',
-	'jutsu',
 	'elegy',
+	'jutsu',
 	'stars',
 	'osial',
 	'quest',

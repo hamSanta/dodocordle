@@ -4,8 +4,8 @@ import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 
-// created on Jul 26 2022, so that'll be day 1
-export const firstGameDate = new Date(2022, 7, 26)
+//changing this broke everything,,, so aha
+export const firstGameDate = new Date(2022, 6, 26)
 export const periodInDays = 1
 
 export const isWordInWordList = (word: string) => {
@@ -80,13 +80,13 @@ export const localeAwareUpperCase = (text: string) => {
 
 export const getToday = () => {
   const today = new Date()
-  today.setHours(0, 0, 0, 0)
+  today.setHours(1, 0, 0, 0)
   return today
 }
 
 export const getLastGameDate = (today: Date) => {
   const t = new Date(today)
-  t.setHours(0, 0, 0)
+  t.setHours(1, 0, 0)
   let daysSinceLastGame =
     (t.getDay() - firstGameDate.getDay() + 7) % periodInDays
   const lastDate = new Date(t)
