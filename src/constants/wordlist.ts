@@ -28,7 +28,7 @@ export const WORDS = [
 	'stove',
 	'flour',
 	'hulao',
-	'rolls',
+	'rolls', //august 23 (last day pre sumeru)
 	'edict',
 	'spire',
 	'winds',

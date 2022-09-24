@@ -80,13 +80,13 @@ export const localeAwareUpperCase = (text: string) => {
 
 export const getToday = () => {
   const today = new Date()
-  today.setHours(1, 0, 0, 0)
+  today.setHours(0, 0, 0, 0)
   return today
 }
 
 export const getLastGameDate = (today: Date) => {
   const t = new Date(today)
-  t.setHours(1, 0, 0)
+  t.setHours(0, 0, 0)
   let daysSinceLastGame =
     (t.getDay() - firstGameDate.getDay() + 7) % periodInDays
   const lastDate = new Date(t)
@@ -96,7 +96,7 @@ export const getLastGameDate = (today: Date) => {
 
 export const getNextGameDate = (today: Date) => {
   const t = new Date(today)
-  t.setHours(1, 0, 0)
+  t.setHours(0, 0, 0)
   t.setDate(getLastGameDate(today).getDate() + periodInDays)
   return t
 }
